@@ -5,8 +5,10 @@
     <title>Newuse</title>
     <link rel="stylesheet" href="../static/css/paginainicial.css">
     <link rel="stylesheet" href="../static/css/cadastraritem.css">
+
 </head>
 <body>
+
     <div class="cabecalho">
 
         <a href="https://www.google.com" target="_blank">
@@ -20,38 +22,31 @@
 
     </div>
 
-    <div class="">
-        <form action="cadastraritem" method="post">
-            <a>Nome da peça: </a>
-            <input name="nomeitem" type="text" >
-            <br>
-            <a>Genero:</a>
-            <select id="genero" name="genero">
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="unisex">Unisex</option>
-            </select>
-            <br>
-            <a>Categoria:</a>
-            <select id="categoria" name="categoria">
-              <option value="camisa">Camisa</option>
-              <option value="calca">Calça</option>
-              <option value="short">Short</option>
-              <option value="cueca">Cueca</option>
-              <option value="calcinha">Calcinha</option>
-              <option value="moletom">Moletom</option>
-            </select>
-            <br>
-            <a>Tamanho:</a>
-                <select id="tamanho" name="tamanho">
-                    <option value="G">G</option>
-                    <option value="M">M</option>
-                    <option value="P">P</option>
-                </select>
-            <br>
-            <a>Descrição: </a>
 
-        </form>
+    <h1 style="text-align: center; margin-bottom: 2px;" >Escolha que tipo de item deseja cadastrar: </h1>
+    <br>
+
+    <div class="corpo">
+
+        <div class="item-bloco" style="">
+            <h2>Roupa</h2>
+            <form method="post" action="/cadastrarroupa">
+                <img src="../static/imagens/roupaitem.png">
+                <button type="submit">Cadastrar roupa</button>
+            </form>
+
+        </div>
+        <div class="item-bloco" style="">
+            <h2>Sapato</h2>
+            <form>
+                <img src="../static/imagens/tenisitem.png">
+                <button formaction="" type="submit">Cadastrar calçado</button>
+            </form>
+
+        </div>
+
     </div>
+
+
 </body>
 </html>
