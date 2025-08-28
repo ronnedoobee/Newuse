@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Adigiana Toybox", sans-serif;
+
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cabecalho {
+    height: 6vh;
+    display: flex;
+    background-color: rgb(31, 30, 41);
+    align-items: center;
+}
+
+.item-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    background-color: pink;
+}
