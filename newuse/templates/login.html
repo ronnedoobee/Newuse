@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="../static/css/paginainicial.css">
 </head>
 <body>
 
-
-    <p>{{erro}}</p>
+    <div>
+        <h2> Login </h2>
+        <form method="post" action="/logar">
+            <p>Usuário:</p>
+            <input type="text" name="usuario" placeholder="Insira o usuário...">
+            <br>
+            <br>
+            <p>Senha:</p>
+            <input type="password" name="senha">
+            <button type="submit">Entrar</button>
+            <br>
+            {{erro}}
+            <br>
+            <br>
+            <p>Não tem uma conta? <a href="/cadastro">Cadastre-se!</a></p>
+        </form>
+    </div>
 
 </body>
 </html>
