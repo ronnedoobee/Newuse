@@ -20,48 +20,64 @@
 
     </div>
 
-    <div class="item-bloco">
-        <form action="cadastrarroupa" method="post">
-            <a>Nome da peça: </a>
-            <input name="nomeroupa" type="text" >
-            <br>
-            <br>
-            <a>Genero:</a>
-            <select id="genero" name="genero">
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="unisex">Unisex</option>
-            </select>
-            <br>
-            <br>
-            <a>Categoria:</a>
-            <select id="categoria" name="categoria">
-              <option value="camisa">Camisa</option>
-              <option value="calca">Calça</option>
-              <option value="short">Short</option>
-              <option value="cueca">Cueca</option>
-              <option value="calcinha">Calcinha</option>
-              <option value="moletom">Moletom</option>
-            </select>
-            <br>
-            <br>
-            <a>Tamanho:</a>
-                <select id="tamanho" name="tamanho">
-                    <option value="G">G</option>
-                    <option value="M">M</option>
-                    <option value="P">P</option>
+    <!--<div class="main-content"-->>
+    <div class="container-blocos">
+        <div class="grid-blocos">
+        <div class="item-bloco">
+            <form action="cadastrarroupa" method="post">
+                <a>Nome da peça: </a>
+                <input name="nomeroupa" type="text" >
+            </form>
+        </div>
+                <br>
+                <br>
+        <div class="item-bloco">
+                <a>Genero:</a>
+                <select id="genero" name="genero">
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="unisex">Unisex</option>
                 </select>
-            <br>
-            <br>
-            <a>Preço: </a>
-            <input type="number" name="preco">
-            <br>
-            <br>
-            <a>Descrição: </a>
-            <input type="text" name="descricao" placeholder="Escreva as especificações da roupa...">
-            <button type="submit">Cadastrar roupa</button>
-
-        </form>
+        </div>
+                <br>
+                <br>
+        <div class="item-bloco">
+                <a>Categoria:</a>
+                <select id="categoria" name="categoria">
+                  <option value="camisa">Camisa</option>
+                  <option value="calca">Calça</option>
+                  <option value="short">Short</option>
+                  <option value="cueca">Cueca</option>
+                  <option value="calcinha">Calcinha</option>
+                  <option value="moletom">Moletom</option>
+                </select>
+        </div>
+                <br>
+                <br>
+        <div class="item-bloco">
+                <a>Tamanho:</a>
+                    <select id="tamanho" name="tamanho">
+                        <option value="G">G</option>
+                        <option value="M">M</option>
+                        <option value="P">P</option>
+                    </select>
+        </div>
+                <br>
+                <br>
+        <div class="item-bloco">
+                <a>Preço: </a>
+                <input type="number" name="preco">
+        </div>
+                <br>
+                <br>
+        <div class="item-bloco">
+                <a>Descrição: </a>
+                <input type="text" name="descricao" placeholder="Escreva as especificações da roupa...">
+                <button type="submit">Cadastrar roupa</button>
+            </form>
+        </div>
+       </div>
     </div>
+
 </body>
 </html>
