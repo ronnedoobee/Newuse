@@ -20,17 +20,16 @@
 
     </div>
 
-    <!--<div class="main-content"-->>
+    <a href="/cadastraritem"> < Cadastrar Item</a>
+    <br>
+    <br>
     <div class="container-blocos">
         <div class="grid-blocos">
         <div class="item-bloco">
             <form action="cadastrarroupa" method="post">
                 <a>Nome da peça: </a>
                 <input name="nomeroupa" type="text" >
-            </form>
         </div>
-                <br>
-                <br>
         <div class="item-bloco">
                 <a>Genero:</a>
                 <select id="genero" name="genero">
@@ -39,8 +38,6 @@
                   <option value="unisex">Unisex</option>
                 </select>
         </div>
-                <br>
-                <br>
         <div class="item-bloco">
                 <a>Categoria:</a>
                 <select id="categoria" name="categoria">
@@ -52,8 +49,6 @@
                   <option value="moletom">Moletom</option>
                 </select>
         </div>
-                <br>
-                <br>
         <div class="item-bloco">
                 <a>Tamanho:</a>
                     <select id="tamanho" name="tamanho">
@@ -62,19 +57,22 @@
                         <option value="P">P</option>
                     </select>
         </div>
-                <br>
-                <br>
+            
         <div class="item-bloco">
                 <a>Preço: </a>
                 <input type="number" name="preco">
         </div>
-                <br>
-                <br>
+                
         <div class="item-bloco">
                 <a>Descrição: </a>
                 <input type="text" name="descricao" placeholder="Escreva as especificações da roupa...">
                 <button type="submit">Cadastrar roupa</button>
+
             </form>
+            <br>
+            <br>
+            {{erro}}
+            {{retorno}}
         </div>
        </div>
     </div>
