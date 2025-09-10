@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/cadastrousuario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-    <a href="/paginainicial"> < Página inicial</a>
+    <div class="cadastro-bloco">
+        <div class="retorno">
+            <a href="/paginainicial"> < Página inicial</a>
+        </div>
     <br>
     <br>
     <h2> Cadastro </h2>
@@ -17,7 +23,7 @@
             <br>
             <p>Senha:</p>
             <input type="password" name="senha">
-            <button type="submit">Entrar</button>
+            <button type="submit">Cadastrar</button>
             <br>
             <br>
              <select id="tipo_user" name="tipouser">
@@ -26,8 +32,9 @@
             </select>
             <br>
             <p>{{saida}}</p>
-            <p>Já tem uma conta? <a href="/login">Faça login!</a></p>
+            <p>Já tem uma conta? <br> <a href="/login">Faça login!</a></p>
         </form>
+    </div>
 
 </body>
 </html>

@@ -24,7 +24,7 @@ body, html {
   display: grid;
   grid-template-columns: repeat(3, 200px); /* 3 colunas com largura fixa */
   grid-template-rows: repeat(2, 150px);    /* 2 linhas com altura fixa */
-  gap: 100px;
+  gap: 150px;
 }
 
 /* Container dos blocos */
@@ -38,14 +38,16 @@ body, html {
 /* Cada bloco */
 .item-bloco {
   display: flex;
-  background-color: rgb(31, 30, 41);
+  background-color: #bbf2f4;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: #bbf2f4;
-  border: solid 5px;
+  color: rgb(31, 30, 41);
+  border: solid 5px #bbf2f4;
   border-radius: 10px;
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   padding: 10px;
+  font-size: 23px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }

@@ -4,12 +4,13 @@ app = Flask(__name__)
 
 roupas = [['Cuecão', 'cueca', 'G', '12', 'éssa bvosta ai']]
 calcados = []
-vendedores = []
+vendedores = [['rome', '123']]
 clientes = []
 logado = False
 cliente = False
 vendedor = False
 nomevendedor = ""
+
 
 
 @app.route('/')
@@ -19,7 +20,7 @@ def pag_principal():
 @app.route('/cadastrarcalcado', methods=['post'])
 def cadastro_calcado():
 
-    global calcados 
+    global calcados
 
     if  logado and vendedor:
 
@@ -154,6 +155,21 @@ def cadastro_roupa():
 
         print(roupas)
         return render_template('cadastrarroupa.html', retorno = msg)
+
+
+@app.route('/pesquisar', methods=['post'])
+def pesquisar():
+    pesquisas = []
+    pesquisar = request.form.get('pesquisar')
+    if pesquisar in roupas and calcados:
+        for roupa in roupas:
+            if pesquisar.lower() == roupa[0].lower():
+                pesquisas.append(roupa)
+        for calcado in calcados:
+            if pesquisar.lower() == calcado[0].lower():
+                pesquisas.append(calcado)
+    print(pesquisas)
+    return render_template('pesquisa.html', lista = pesquisas)
 
 
 if __name__ == '__main__':
